@@ -1,0 +1,20 @@
+
+{
+    "region" : "us-east-2",
+    "configuration" : "Debug",
+    "framework"     : "net8.0",
+    "self-contained" : true,
+    "application"    : "photoworld",
+    "environment"    : "photoworld-dev",
+    "enable-xray"    : false,
+    "enhanced-health-type" : "basic",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-06655eae6abef4bca\";\"aws:ec2:vpc,Subnets\"=\"subnet-0c6368b0bcdd37b25\"",
+    "solution-stack"       : "64bit Amazon Linux 2 v2.8.7 running .NET Core",
+    "environment-type"     : "SingleInstance",
+    "cname"                : "photoworld-dev",
+    "instance-type"        : "t2.micro",
+    "key-pair"             : "nk-key",
+    "instance-profile"     : "aws-elasticbeanstalk-ec2-role",
+    "service-role"         : "aws-elasticbeanstalk-service-role",
+    "proxy-server"         : "nginx"
+}
